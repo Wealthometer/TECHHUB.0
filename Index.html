@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeNest - Learn. Build. Grow.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-code"></i>
+                <span>CodeNest</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#courses" class="nav-link">Courses</a></li>
+                <li><a href="#instructors" class="nav-link">Instructors</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <!-- <li><a href="#dashboard" class="nav-link dashboard-link">Dashboard</a></li> -->
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="main-content">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <!-- Hero Section with Slider -->
+            <section class="hero">
+                <div class="hero-slider">
+                    <div class="slide active">
+                        <div class="slide-content">
+                            <div class="hero-text">
+                                <h1>Learn. Build. Grow.</h1>
+                                <p>Master the latest technologies with hands-on projects and expert guidance. Start your coding journey today!</p>
+                                <button class="cta-btn" onclick="showPage('courses')">Start Learning</button>
+                            </div>
+                            <div class="hero-image">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="hero-text">
+                                <h1>Expert Instructors</h1>
+                                <p>Learn from industry professionals with years of real-world experience in top tech companies.</p>
+                                <button class="cta-btn" onclick="showPage('instructors')">Meet Our Team</button>
+                            </div>
+                            <div class="hero-image">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="hero-text">
+                                <h1>Build Real Projects</h1>
+                                <p>Apply your skills with hands-on projects that you can showcase in your portfolio.</p>
+                                <button class="cta-btn" onclick="showPage('courses')">View Projects</button>
+                            </div>
+                            <div class="hero-image">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </section>
+
+            <!-- Course Overview -->
+            <section class="course-overview">
+                <div class="container">
+                    <h2>Popular Tech Stacks</h2>
+                    <div class="tech-grid">
+                        <div class="tech-card">
+                            <i class="fab fa-html5"></i>
+                            <h3>Frontend Development</h3>
+                            <p>HTML, CSS, JavaScript, React</p>
+                            <span class="level">Beginner</span>
+                        </div>
+                        <div class="tech-card">
+                            <i class="fab fa-python"></i>
+                            <h3>Python Programming</h3>
+                            <p>Python, Django, Data Science</p>
+                            <span class="level">Intermediate</span>
+                        </div>
+                        <div class="tech-card">
+                            <i class="fab fa-node-js"></i>
+                            <h3>Backend Development</h3>
+                            <p>Node.js, Express, MongoDB</p>
+                            <span class="level">Intermediate</span>
+                        </div>
+                        <div class="tech-card">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h3>Mobile Development</h3>
+                            <p>React Native, Flutter</p>
+                            <span class="level">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Choose Us -->
+            <section class="why-choose-us">
+                <div class="container">
+                    <h2>Why Choose CodeNest?</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <i class="fas fa-clock"></i>
+                            <h3>Learn at Your Pace</h3>
+                            <p>Self-paced learning with lifetime access to course materials</p>
+                        </div>
+                        <div class="benefit-card">
+                            <i class="fas fa-hands-helping"></i>
+                            <h3>Expert Support</h3>
+                            <p>Get help from instructors and community when you need it</p>
+                        </div>
+                        <div class="benefit-card">
+                            <i class="fas fa-certificate"></i>
+                            <h3>Industry Recognition</h3>
+                            <p>Earn certificates that employers value and recognize</p>
+                        </div>
+                        <div class="benefit-card">
+                            <i class="fas fa-project-diagram"></i>
+                            <h3>Real Projects</h3>
+                            <p>Build portfolio-worthy projects with real-world applications</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials -->
+            <section class="testimonials">
+                <div class="container">
+                    <h2>What Our Students Say</h2>
+                    <div class="testimonial-grid">
+                        <div class="testimonial-card">
+                            <div class="stars">★★★★★</div>
+                            <p>"CodeNest helped me transition from marketing to web development. The courses are practical and well-structured!"</p>
+                            <div class="student-info">
+                                <strong>Sarah Johnson</strong>
+                                <span>Frontend Developer at TechCorp</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="stars">★★★★★</div>
+                            <p>"The Python course was exactly what I needed to advance my data science career. Highly recommended!"</p>
+                            <div class="student-info">
+                                <strong>Mike Chen</strong>
+                                <span>Data Scientist at DataFlow</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="stars">★★★★★</div>
+                            <p>"Great instructors, clear explanations, and hands-on projects. This platform is a game-changer!"</p>
+                            <div class="student-info">
+                                <strong>Emily Rodriguez</strong>
+                                <span>Full Stack Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tools Used -->
+            <section class="tools-section">
+                <div class="container">
+                    <h2>Technologies We Teach</h2>
+                    <div class="tools-grid">
+                        <div class="tool-logo"><i class="fab fa-html5"></i></div>
+                        <div class="tool-logo"><i class="fab fa-css3-alt"></i></div>
+                        <div class="tool-logo"><i class="fab fa-js-square"></i></div>
+                        <div class="tool-logo"><i class="fab fa-react"></i></div>
+                        <div class="tool-logo"><i class="fab fa-python"></i></div>
+                        <div class="tool-logo"><i class="fab fa-node-js"></i></div>
+                        <div class="tool-logo"><i class="fab fa-git-alt"></i></div>
+                        <div class="tool-logo"><i class="fab fa-docker"></i></div>
+                        <div class="tool-logo"><i class="fa-brands fa-flutter"></i></div>
+                        <div class="tool-logo"><i class="fa-brands fa-dart-lang"></i></div>
+                        <div class="tool-logo"><i class="fa-brands fa-node"></i></div>
+                        <div class="tool-logo"><i class="fa-brands fa-golang"></i></div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Courses Page -->
+        <section id="courses" class="page">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Our Courses</h1>
+                    <p>Choose from our comprehensive selection of tech courses</p>
+                </div>
+
+                <!-- Course Filters -->
+                <div class="course-filters">
+                    <button class="filter-btn active" data-filter="all">All Courses</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="backend">Backend</button>
+                    <button class="filter-btn" data-filter="python">Python</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                </div>
+
+                <!-- Courses Grid -->
+                <div class="courses-grid">
+                    <div class="course-card" data-category="frontend" data-course="html-css-js">
+                        <div class="course-image">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="course-content">
+                            <h3>Complete Web Development</h3>
+                            <div class="course-meta">
+                                <span class="difficulty beginner">Beginner</span>
+                                <span class="duration">40 hours</span>
+                            </div>
+                            <p>Master HTML, CSS, and JavaScript to build modern, responsive websites from scratch.</p>
+                            <div class="course-stats">
+                                <span><i class="fas fa-users"></i> 1,234 students</span>
+                                <span><i class="fas fa-star"></i> 4.8 (456 reviews)</span>
+                            </div>
+                            <button class="enroll-btn" onclick="showCourseDetail('html-css-js')">View Course</button>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-category="python" data-course="python-basics">
+                        <div class="course-image">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="course-content">
+                            <h3>Python for Beginners</h3>
+                            <div class="course-meta">
+                                <span class="difficulty beginner">Beginner</span>
+                                <span class="duration">30 hours</span>
+                            </div>
+                            <p>Learn Python programming from basics to advanced concepts with real-world projects.</p>
+                            <div class="course-stats">
+                                <span><i class="fas fa-users"></i> 2,156 students</span>
+                                <span><i class="fas fa-star"></i> 4.9 (789 reviews)</span>
+                            </div>
+                            <button class="enroll-btn" onclick="showCourseDetail('python-basics')">View Course</button>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-category="frontend" data-course="react-advanced">
+                        <div class="course-image">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="course-content">
+                            <h3>Advanced React Development</h3>
+                            <div class="course-meta">
+                                <span class="difficulty intermediate">Intermediate</span>
+                                <span class="duration">50 hours</span>
+                            </div>
+                            <p>Build complex React applications with hooks, context, and modern development practices.</p>
+                            <div class="course-stats">
+                                <span><i class="fas fa-users"></i> 987 students</span>
+                                <span><i class="fas fa-star"></i> 4.7 (234 reviews)</span>
+                            </div>
+                            <button class="enroll-btn" onclick="showCourseDetail('react-advanced')">View Course</button>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-category="backend" data-course="nodejs-express">
+                        <div class="course-image">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <div class="course-content">
+                            <h3>Node.js & Express Mastery</h3>
+                            <div class="course-meta">
+                                <span class="difficulty intermediate">Intermediate</span>
+                                <span class="duration">45 hours</span>
+                            </div>
+                            <p>Build scalable backend applications with Node.js, Express, and MongoDB.</p>
+                            <div class="course-stats">
+                                <span><i class="fas fa-users"></i> 756 students</span>
+                                <span><i class="fas fa-star"></i> 4.6 (189 reviews)</span>
+                            </div>
+                            <button class="enroll-btn" onclick="showCourseDetail('nodejs-express')">View Course</button>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-category="mobile" data-course="react-native">
+                        <div class="course-image">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="course-content">
+                            <h3>React Native Mobile Apps</h3>
+                            <div class="course-meta">
+                                <span class="difficulty advanced">Advanced</span>
+                                <span class="duration">60 hours</span>
+                            </div>
+                            <p>Create cross-platform mobile applications using React Native and modern tools.</p>
+                            <div class="course-stats">
+                                <span><i class="fas fa-users"></i> 543 students</span>
+                                <span><i class="fas fa-star"></i> 4.8 (123 reviews)</span>
+                            </div>
+                            <button class="enroll-btn" onclick="showCourseDetail('react-native')">View Course</button>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-category="python" data-course="data-science">
+                        <div class="course-image">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="course-content">
+                            <h3>Data Science with Python</h3>
+                            <div class="course-meta">
+                                <span class="difficulty advanced">Advanced</span>
+                                <span class="duration">70 hours</span>
+                            </div>
+                            <p>Master data analysis, visualization, and machine learning with Python libraries.</p>
+                            <div class="course-stats">
+                                <span><i class="fas fa-users"></i> 892 students</span>
+                                <span><i class="fas fa-star"></i> 4.9 (345 reviews)</span>
+                            </div>
+                            <button class="enroll-btn" onclick="showCourseDetail('data-science')">View Course</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Detail Page -->
+        <section id="course-detail" class="page">
+            <div class="container">
+                <button class="back-btn" onclick="showPage('courses')">
+                    <i class="fas fa-arrow-left"></i> Back to Courses
+                </button>
+                
+                <div class="course-detail-content">
+                    <div class="course-detail-header">
+                        <div class="course-detail-info">
+                            <h1 id="course-detail-title">Complete Web Development</h1>
+                            <div class="course-detail-meta">
+                                <span class="difficulty beginner" id="course-detail-difficulty">Beginner</span>
+                                <span class="duration" id="course-detail-duration">40 hours</span>
+                                <span class="rating"><i class="fas fa-star"></i> 4.8 (456 reviews)</span>
+                            </div>
+                            <p id="course-detail-description">Master HTML, CSS, and JavaScript to build modern, responsive websites from scratch. This comprehensive course covers everything you need to become a frontend developer.</p>
+                        </div>
+                        <div class="course-detail-actions">
+                            <button class="enroll-btn large" onclick="enrollInCourse()">Enroll Now</button>
+                            <button class="preview-btn" onclick="showPage('learn')">Preview Course</button>
+                        </div>
+                    </div>
+
+                    <div class="course-detail-body">
+                        <div class="course-curriculum">
+                            <h3>What You'll Learn</h3>
+                            <ul id="course-learning-objectives">
+                                <li>Build responsive websites with HTML5 and CSS3</li>
+                                <li>Master JavaScript fundamentals and ES6+ features</li>
+                                <li>Create interactive web applications</li>
+                                <li>Use modern development tools and workflows</li>
+                                <li>Deploy websites to production</li>
+                            </ul>
+
+                            <h3>Course Curriculum</h3>
+                            <div class="curriculum-list" id="course-curriculum-list">
+                                <div class="module">
+                                    <h4><i class="fas fa-play-circle"></i> Module 1: HTML Fundamentals</h4>
+                                    <ul id="course-learning-objectives">
+                                        <li>Introduction to HTML</li>
+                                        <li>HTML Elements and Structure</li>
+                                        <li>Forms and Input Elements</li>
+                                        <li>Semantic HTML</li>
+                                    </ul>
+                                </div>
+                                <div class="module">
+                                    <h4><i class="fas fa-play-circle"></i> Module 2: CSS Styling</h4>
+                                    <ul id="course-learning-objectives1">
+                                        <li>CSS Basics and Selectors</li>
+                                        <li>Layout with Flexbox and Grid</li>
+                                        <li>Responsive Design</li>
+                                        <li>CSS Animations</li>
+                                    </ul>
+                                </div>
+                                <div class="module">
+                                    <h4><i class="fas fa-play-circle"></i> Module 3: JavaScript Programming</h4>
+                                    <ul id="course-learning-objectives1">
+                                        <li>JavaScript Fundamentals</li>
+                                        <li>DOM Manipulation</li>
+                                        <li>Event Handling</li>
+                                        <li>Async JavaScript</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="instructor-info">
+                            <h3>Your Instructor</h3>
+                            <div class="instructor-card">
+                                <div class="instructor-avatar">
+                                    <i class="fas fa-user-circle"></i>
+                                </div>
+                                <div class="instructor-details">
+                                    <h4 id="course-instructor-name">John Smith</h4>
+                                    <p id="course-instructor-title">Senior Frontend Developer</p>
+                                    <p id="course-instructor-bio">John has 8+ years of experience building web applications for Fortune 500 companies. He's passionate about teaching and has helped thousands of students start their coding careers.</p>
+                                    <div class="instructor-stats">
+                                        <span><i class="fas fa-users"></i> 5,000+ students</span>
+                                        <span><i class="fas fa-star"></i> 4.9 rating</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learn Page (Lesson Viewer) -->
+        <section id="learn" class="page">
+            <div class="learn-container">
+                <div class="lesson-sidebar">
+                    <div class="course-progress">
+                        <h3>Course Progress</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 35%"></div>
+                        </div>
+                        <span>7 of 20 lessons completed</span>
+                    </div>
+
+                    <div class="lessons-list">
+                        <div class="module-section">
+                            <h4>Module 1: HTML Fundamentals</h4>
+                            <ul>
+                                <li class="lesson completed" data-lesson="1">
+                                    <i class="fas fa-check-circle"></i>
+                                    Introduction to HTML
+                                </li>
+                                <li class="lesson completed" data-lesson="2">
+                                    <i class="fas fa-check-circle"></i>
+                                    HTML Elements
+                                </li>
+                                <li class="lesson current" data-lesson="3">
+                                    <i class="fas fa-play-circle"></i>
+                                    Forms and Inputs
+                                </li>
+                                <li class="lesson" data-lesson="4">
+                                    <i class="fas fa-circle"></i>
+                                    Semantic HTML
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="module-section">
+                            <h4>Module 2: CSS Styling</h4>
+                            <ul>
+                                <li class="lesson" data-lesson="5">
+                                    <i class="fas fa-circle"></i>
+                                    CSS Basics
+                                </li>
+                                <li class="lesson" data-lesson="6">
+                                    <i class="fas fa-circle"></i>
+                                    Flexbox Layout
+                                </li>
+                                <li class="lesson" data-lesson="7">
+                                    <i class="fas fa-circle"></i>
+                                    CSS Grid
+                                </li>
+                                <li class="lesson" data-lesson="8">
+                                    <i class="fas fa-circle"></i>
+                                    Responsive Design
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lesson-content">
+                    <div class="lesson-header">
+                        <button class="back-btn" onclick="showPage('course-detail')">
+                            <i class="fas fa-arrow-left"></i> Back to Course
+                        </button>
+                        <h1 id="current-lesson-title">HTML Forms and Input Elements</h1>
+                    </div>
+
+                    <div class="lesson-body">
+                        <div class="lesson-video">
+                            <div class="video-placeholder">
+                                <i class="fas fa-play-circle"></i>
+                                <p>Video: HTML Forms Tutorial (15:30)</p>
+                            </div>
+                        </div>
+
+                        <div class="lesson-text">
+                            <h2>Learning Objectives</h2>
+                            <ul>
+                                <li>Understand HTML form structure</li>
+                                <li>Learn different input types</li>
+                                <li>Implement form validation</li>
+                                <li>Style forms with CSS</li>
+                            </ul>
+
+                            <h2>HTML Forms Overview</h2>
+                            <p>HTML forms are essential for collecting user input on web pages. They provide a way for users to interact with your website by submitting data.</p>
+
+                            <h3>Basic Form Structure</h3>
+                            <div class="code-block">
+                                <pre><code>&lt;form action="/submit" method="POST"&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name" required&gt;
+  
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email" required&gt;
+  
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+                            </div>
+
+                            <h3>Common Input Types</h3>
+                            <ul>
+                                <li><strong>text</strong> - Single line text input</li>
+                                <li><strong>email</strong> - Email address input with validation</li>
+                                <li><strong>password</strong> - Password input (hidden text)</li>
+                                <li><strong>number</strong> - Numeric input</li>
+                                <li><strong>checkbox</strong> - Checkbox for multiple selections</li>
+                                <li><strong>radio</strong> - Radio button for single selection</li>
+                            </ul>
+                        </div>
+
+                        <div class="lesson-quiz">
+                            <h3>Quick Quiz</h3>
+                            <div class="quiz-question">
+                                <p>Which input type should you use for collecting email addresses?</p>
+                                <div class="quiz-options">
+                                    <label><input type="radio" name="q1" value="text"> text</label>
+                                    <label><input type="radio" name="q1" value="email"> email</label>
+                                    <label><input type="radio" name="q1" value="string"> string</label>
+                                </div>
+                                <button class="check-answer-btn">Check Answer</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lesson-navigation">
+                        <button class="nav-btn prev" onclick="previousLesson()">
+                            <i class="fas fa-chevron-left"></i> Previous Lesson
+                        </button>
+                        <button class="nav-btn next" onclick="nextLesson()">
+                            Next Lesson <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instructors Page -->
+        <section id="instructors" class="page">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Meet Our Expert Instructors</h1>
+                    <p>Learn from industry professionals with real-world experience</p>
+                </div>
+
+                <div class="instructor-filters">
+                    <button class="filter-btn active" data-filter="all">All Instructors</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="backend">Backend</button>
+                    <button class="filter-btn" data-filter="python">Python</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                </div>
+
+                <div class="instructors-grid">
+                    <div class="instructor-card" data-category="frontend">
+                        <div class="instructor-image">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="instructor-info">
+                            <h3>John Smith</h3>
+                            <p class="instructor-title">Senior Frontend Developer</p>
+                            <p class="instructor-company">Ex-Google, Meta</p>
+                            <p class="instructor-bio">8+ years building scalable web applications. Specializes in React, JavaScript, and modern frontend architectures.</p>
+                            <div class="instructor-stats">
+                                <span><i class="fas fa-users"></i> 5,000+ students</span>
+                                <span><i class="fas fa-star"></i> 4.9 rating</span>
+                            </div>
+                            <div class="instructor-skills">
+                                <span class="skill">React</span>
+                                <span class="skill">JavaScript</span>
+                                <span class="skill">CSS</span>
+                            </div>
+                            <div class="instructor-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="instructor-card" data-category="python">
+                        <div class="instructor-image">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="instructor-info">
+                            <h3>Sarah Johnson</h3>
+                            <p class="instructor-title">Data Science Lead</p>
+                            <p class="instructor-company">Ex-Netflix, Spotify</p>
+                            <p class="instructor-bio">10+ years in data science and machine learning. Expert in Python, TensorFlow, and statistical analysis.</p>
+                            <div class="instructor-stats">
+                                <span><i class="fas fa-users"></i> 3,200+ students</span>
+                                <span><i class="fas fa-star"></i> 4.8 rating</span>
+                            </div>
+                            <div class="instructor-skills">
+                                <span class="skill">Python</span>
+                                <span class="skill">Machine Learning</span>
+                                <span class="skill">Data Analysis</span>
+                            </div>
+                            <div class="instructor-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="instructor-card" data-category="backend">
+                        <div class="instructor-image">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="instructor-info">
+                            <h3>Mike Chen</h3>
+                            <p class="instructor-title">Backend Architect</p>
+                            <p class="instructor-company">Ex-Amazon, Microsoft</p>
+                            <p class="instructor-bio">12+ years designing distributed systems. Specializes in Node.js, microservices, and cloud architecture.</p>
+                            <div class="instructor-stats">
+                                <span><i class="fas fa-users"></i> 4,100+ students</span>
+                                <span><i class="fas fa-star"></i> 4.7 rating</span>
+                            </div>
+                            <div class="instructor-skills">
+                                <span class="skill">Node.js</span>
+                                <span class="skill">AWS</span>
+                                <span class="skill">MongoDB</span>
+                            </div>
+                            <div class="instructor-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="instructor-card" data-category="mobile">
+                        <div class="instructor-image">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="instructor-info">
+                            <h3>Emily Rodriguez</h3>
+                            <p class="instructor-title">Mobile Development Expert</p>
+                            <p class="instructor-company">Ex-Uber, Airbnb</p>
+                            <p class="instructor-bio">7+ years building mobile apps. Expert in React Native, Flutter, and cross-platform development.</p>
+                            <div class="instructor-stats">
+                                <span><i class="fas fa-users"></i> 2,800+ students</span>
+                                <span><i class="fas fa-star"></i> 4.9 rating</span>
+                            </div>
+                            <div class="instructor-skills">
+                                <span class="skill">React Native</span>
+                                <span class="skill">Flutter</span>
+                                <span class="skill">iOS/Android</span>
+                            </div>
+                            <div class="instructor-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog/Resources Page -->
+        <section id="blog" class="page">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Blog & Resources</h1>
+                    <p>Stay updated with the latest in tech and programming</p>
+                </div>
+
+                <div class="blog-grid">
+                    <article class="blog-card featured">
+                        <div class="blog-image">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="category">Tutorial</span>
+                                <span class="date">Dec 15, 2024</span>
+                            </div>
+                            <h2>10 JavaScript ES6 Features Every Developer Should Know</h2>
+                            <p>Discover the most important ES6 features that will make your JavaScript code more modern, readable, and efficient.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="category">React</span>
+                                <span class="date">Dec 12, 2024</span>
+                            </div>
+                            <h3>Building Your First React App: A Step-by-Step Guide</h3>
+                            <p>Learn how to create a React application from scratch with this comprehensive beginner's guide.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="category">Python</span>
+                                <span class="date">Dec 10, 2024</span>
+                            </div>
+                            <h3>Python Data Structures: Lists, Dictionaries, and Sets</h3>
+                            <p>Master Python's built-in data structures and learn when to use each one effectively.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="category">Backend</span>
+                                <span class="date">Dec 8, 2024</span>
+                            </div>
+                            <h3>RESTful API Design Best Practices</h3>
+                            <p>Learn how to design clean, maintainable APIs that follow REST principles and industry standards.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="category">Mobile</span>
+                                <span class="date">Dec 5, 2024</span>
+                            </div>
+                            <h3>React Native vs Flutter: Which Should You Choose?</h3>
+                            <p>Compare the two leading cross-platform mobile development frameworks and their pros and cons.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="category">Career</span>
+                                <span class="date">Dec 3, 2024</span>
+                            </div>
+                            <h3>How to Land Your First Developer Job in 2024</h3>
+                            <p>Essential tips and strategies for breaking into the tech industry as a new developer.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Page -->
+        <section id="about" class="page">
+            <div class="container">
+                <div class="about-hero">
+                    <h1>About CodeNest</h1>
+                    <p class="about-subtitle">Empowering the next generation of developers through quality education</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-section">
+                        <h2>Our Mission</h2>
+                        <p>At CodeNest, we believe that everyone deserves access to high-quality tech education. Our mission is to make programming and technology skills accessible to learners worldwide, regardless of their background or experience level.</p>
+                    </div>
+
+                    <div class="about-section">
+                        <h2>Our Story</h2>
+                        <p>Founded in 2020 by a team of passionate developers and educators, CodeNest was born from the frustration of seeing talented individuals struggle to find quality, practical programming education. We set out to create a platform that bridges the gap between theoretical knowledge and real-world application.</p>
+                        <p>Today, we've helped over 50,000 students worldwide launch their careers in technology, with many now working at top companies like Google, Microsoft, Amazon, and innovative startups.</p>
+                    </div>
+
+                    <div class="about-section">
+                        <h2>What Makes Us Different</h2>
+                        <div class="differences-grid">
+                            <div class="difference-item">
+                                <i class="fas fa-project-diagram"></i>
+                                <h3>Project-Based Learning</h3>
+                                <p>Every course includes real-world projects that you can showcase in your portfolio.</p>
+                            </div>
+                            <div class="difference-item">
+                                <i class="fas fa-users"></i>
+                                <h3>Industry Experts</h3>
+                                <p>Learn from professionals currently working at top tech companies.</p>
+                            </div>
+                            <div class="difference-item">
+                                <i class="fas fa-heart"></i>
+                                <h3>Community Support</h3>
+                                <p>Join a supportive community of learners and mentors who help each other succeed.</p>
+                            </div>
+                            <div class="difference-item">
+                                <i class="fas fa-clock"></i>
+                                <h3>Flexible Learning</h3>
+                                <p>Learn at your own pace with lifetime access to all course materials.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>50,000+</h3>
+                            <p>Students Worldwide</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>95%</h3>
+                            <p>Job Placement Rate</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>4.8/5</h3>
+                            <p>Average Rating</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>24/7</h3>
+                            <p>Community Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="page">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Get In Touch</h1>
+                    <p>Have questions? We'd love to hear from you!</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>hello@codenest.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Address</h3>
+                                <p>123 Tech Street<br>Only God Know's Where 🤣, NA 94105</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <h3>Follow Us</h3>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h2>Send us a Message</h2>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject">
+                                    <option value="">Select a topic</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="courses">Course Information</option>
+                                    <option value="technical">Technical Support</option>
+                                    <option value="partnership">Partnership</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dashboard Page -->
+        <section id="dashboard" class="page">
+            <div class="container">
+                <div class="dashboard-header">
+                    <h1>Welcome back, Student!</h1>
+                    <p>Continue your learning journey</p>
+                </div>
+
+                <div class="dashboard-content">
+                    <div class="dashboard-stats">
+                        <div class="stat-card">
+                            <i class="fas fa-book-open"></i>
+                            <div class="stat-info">
+                                <h3>3</h3>
+                                <p>Courses Enrolled</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-clock"></i>
+                            <div class="stat-info">
+                                <h3>47</h3>
+                                <p>Hours Learned</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-trophy"></i>
+                            <div class="stat-info">
+                                <h3>2</h3>
+                                <p>Certificates Earned</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-fire"></i>
+                            <div class="stat-info">
+                                <h3>12</h3>
+                                <p>Day Streak</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-sections">
+                        <div class="dashboard-section">
+                            <h2>Continue Learning</h2>
+                            <div class="course-progress-cards">
+                                <div class="progress-card">
+                                    <div class="course-info">
+                                        <h3>Complete Web Development</h3>
+                                        <p>HTML Forms and Input Elements</p>
+                                    </div>
+                                    <div class="progress-info">
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 35%"></div>
+                                        </div>
+                                        <span>35% Complete</span>
+                                    </div>
+                                    <button class="continue-btn" onclick="showPage('learn')">Continue</button>
+                                </div>
+
+                                <div class="progress-card">
+                                    <div class="course-info">
+                                        <h3>Python for Beginners</h3>
+                                        <p>Variables and Data Types</p>
+                                    </div>
+                                    <div class="progress-info">
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 60%"></div>
+                                        </div>
+                                        <span>60% Complete</span>
+                                    </div>
+                                    <button class="continue-btn">Continue</button>
+                                </div>
+
+                                <div class="progress-card">
+                                    <div class="course-info">
+                                        <h3>Advanced React Development</h3>
+                                        <p>React Hooks Deep Dive</p>
+                                    </div>
+                                    <div class="progress-info">
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 15%"></div>
+                                        </div>
+                                        <span>15% Complete</span>
+                                    </div>
+                                    <button class="continue-btn">Continue</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-section">
+                            <h2>Recent Achievements</h2>
+                            <div class="achievements-list">
+                                <div class="achievement-item">
+                                    <i class="fas fa-medal"></i>
+                                    <div class="achievement-info">
+                                        <h3>HTML Master</h3>
+                                        <p>Completed HTML Fundamentals module</p>
+                                        <span class="achievement-date">2 days ago</span>
+                                    </div>
+                                </div>
+                                <div class="achievement-item">
+                                    <i class="fas fa-fire"></i>
+                                    <div class="achievement-info">
+                                        <h3>Week Warrior</h3>
+                                        <p>Maintained 7-day learning streak</p>
+                                        <span class="achievement-date">1 week ago</span>
+                                    </div>
+                                </div>
+                                <div class="achievement-item">
+                                    <i class="fas fa-star"></i>
+                                    <div class="achievement-info">
+                                        <h3>First Steps</h3>
+                                        <p>Completed your first lesson</p>
+                                        <span class="achievement-date">2 weeks ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-section">
+                            <h2>Bookmarked Lessons</h2>
+                            <div class="bookmarks-list">
+                                <div class="bookmark-item">
+                                    <i class="fas fa-bookmark"></i>
+                                    <div class="bookmark-info">
+                                        <h3>CSS Flexbox Layout</h3>
+                                        <p>Complete Web Development</p>
+                                    </div>
+                                    <button class="bookmark-btn">View</button>
+                                </div>
+                                <div class="bookmark-item">
+                                    <i class="fas fa-bookmark"></i>
+                                    <div class="bookmark-info">
+                                        <h3>Python Functions</h3>
+                                        <p>Python for Beginners</p>
+                                    </div>
+                                    <button class="bookmark-btn">View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-code"></i>
+                        <span>CodeNest</span>
+                    </div>
+                    <p>Empowering developers worldwide with quality education and practical skills.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Courses</h3>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Python Programming</a></li>
+                        <li><a href="#">React Development</a></li>
+                        <li><a href="#">Node.js Backend</a></li>
+                        <li><a href="#">Mobile Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#instructors">Instructors</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Re  fund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CodeNest. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
