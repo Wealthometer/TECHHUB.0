@@ -2,7 +2,7 @@ let currentSlide = 0;
 let slideInterval;
 let currentCourse = null;
 
-// Course Data
+// Course Data.......
 const courseData = {
     'html-css-js': {
         title: 'Complete Web Development',
@@ -138,13 +138,13 @@ function setupNavigation() {
     const navMenu = document.querySelector('.nav-menu');
     const navLinks = document.querySelectorAll('.nav-link');
 
-    // Mobile menu toggle
+    // Mobile menu toggle...........
     hamburger.addEventListener('click', function() {
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
     });
 
-    // Navigation link clicks
+    // Navigation link clicks..........
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
@@ -162,7 +162,7 @@ function setupNavigation() {
     });
 }
 
-// Page Navigation
+// Page Navigation..............
 function showPage(pageId) {
     // Hide all pages
     const pages = document.querySelectorAll('.page');
